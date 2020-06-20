@@ -6,18 +6,20 @@
 
 ## Building blocks
 
-### Block
+### Processor
 
-Thoughtput
-Thoughtput / Clock
-Clock
-Power
-Latency
+Exectues tasks based on supported instructions set types (CPU, GPU, LAN)
 
-### Interface
+#### Thoughtput
 
-Thoughtput
-Thoughtput / Clock
-Clock
-Power
-Latency
+How many bits can be processed per cycle
+
+#### Clock
+
+#### Power
+
+How much power is used
+
+#### Latency
+
+Static time to respond
