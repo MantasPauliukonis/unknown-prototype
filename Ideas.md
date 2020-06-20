@@ -16,6 +16,8 @@ How many bits can be processed per cycle
 
 #### Clock
 
+-
+
 #### Power
 
 How much power is used
