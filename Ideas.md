@@ -4,8 +4,7 @@
 
 TODO
 
-## Building blocks 
-------
+## Hardware
 
 ## Chassis
 
@@ -82,3 +81,33 @@ Routes the heat through the blocks. Supports mounting the heatsink on top
 #### Max Heat
 
 TODO
+
+## Tasks
+
+Machines compute tasks
+
+Task is basically a list of action that the system has to complete.
+
+An example:
+
+Task can take up to two inputs, and will make one output
+
+#### Inputs
+
+| Name | Amount Transferred |
+|---|---|---|
+|X|1|
+|Y|2|
+
+#### Execution
+
+| Instruction | Amount Transferred | Max Parallel Processes |
+|---|---|---|
+|CPU (AB)|8|2|
+|CPU (AB2)|16|1|
+
+#### Outputs
+
+| Name | Amount Transferred |
+|---|---|---|
+|Z|16|
