@@ -14,7 +14,9 @@ Chassis is limited by the amount of blocks vertically and horizontally.
 
 ## Processor
 
-Executes tasks based on supported instructions set types (CPU, GPU, LAN)
+Executes tasks based on supported instructions set types (CPU, GPU)
+
+* may accommodate a single or multiple instruction sets (fixed purpose or general purpose)
 
 #### Throughput
 
@@ -128,3 +130,12 @@ An example:
 | Name | Amount Transferred |
 |---|---|
 |Z|16|
+
+1) Inputs X and Y are transferred from the local disk or network
+* total 3 in size
+2) X and Y are directed to the first instruction execution (AB) 
+* from 3, size becomes 8
+3) Result is directed to the second instruction execution (AB2) 
+* from 8, size becomes 16
+4) Output amount is written locally or transferred to the network
+* 16 is the final size
