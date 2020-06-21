@@ -95,7 +95,7 @@ Task can take up to two inputs, and will make one output
 #### Inputs
 
 | Name | Amount Transferred |
-|---|---|---|
+|---|---|
 |X|1|
 |Y|2|
 
@@ -109,5 +109,5 @@ Task can take up to two inputs, and will make one output
 #### Outputs
 
 | Name | Amount Transferred |
-|---|---|---|
+|---|---|
 |Z|16|
