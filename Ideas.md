@@ -36,11 +36,23 @@ Clock dictates performance of the component and is limited by maximum power cons
 
 #### Latency
 
-Static time to respond
+Static time to respond (independent from clock)
+
+#### Durability
+
+Signifies how long the component will last before it needs to be replaced
 
 ## Memory
 
 Stores data on demand. Can be volatile or non-volatile
+
+* if amount can be transferred in one go, usage will decrease
+* data that is not being processed or transferred, that is queued, will be stored
+* running multiple tasks will severely increase usage
+* will a different varieties for different purposes:
+    * cache -- very fast and small
+    * ram -- balance between speed and size
+    * hard drive -- slow but large
 
 #### Size
 
@@ -56,6 +68,9 @@ How many bits can be written/read per cycle
 
 Interconnects blocks together
 
+* like a regular processor, consumes power, produces heat that is carried to the near blocks (as the interfaces are not blocks themselves)
+* it's only work is to carry data
+
 *(inherits everything else from processor)*
 
 ## Heatsink
@@ -64,7 +79,7 @@ Placed on top of the blocks. Increases maximum heat that the block can dissipate
 
 #### Max Dissipation
 
-TODO
+Maximum heats that can be dissipated
 
 ## Fan
 
@@ -80,17 +95,19 @@ Routes the heat through the blocks. Supports mounting the heatsink on top
 
 #### Max Heat
 
-TODO
+Maximum heat that can be carried
 
 ## Tasks
 
 Machines compute tasks
 
-Task is basically a list of action that the system has to complete.
+* task is basically a list of action that the system has to complete
+* task can take up to two inputs, and will make one output
+* performance will depend on how well qualified machine is for this specific task
+* components used for execution can be chosen (e.g. if one is more suitable than another)
+* multiple tasks (same and different) can be run at the same time but it will have further ramifications
 
 An example:
-
-Task can take up to two inputs, and will make one output
 
 #### Inputs
 
