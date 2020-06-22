@@ -51,7 +51,7 @@ Stores data on demand. Can be volatile or non-volatile
 * if amount can be transferred in one go, usage will decrease
 * data that is not being processed or transferred, that is queued, will be stored
 * running multiple tasks will severely increase usage
-* will a different varieties for different purposes:
+* will have a different varieties for different purposes:
     * cache -- very fast and small
     * ram -- balance between speed and size
     * hard drive -- slow but large
