@@ -22,6 +22,8 @@ Executes tasks based on supported instructions set types (CPU, GPU)
 
 How many bits can be processed per cycle
 
+Calculation: `Throughput = Clock * Throughput per Clock`
+
 #### Power
 
 How much power is used.
@@ -31,6 +33,12 @@ Power usage profile has two main variables:
 * Idle Power - usage under zero load
 
 Power can be adjusted to increase efficiency and/or performance
+
+Calculation: `Power = max(Clock * Power by Clock * Load %, Idle Power)`
+
+*Power by Frequency* describes maximum power that is used under certain clock on full load. Component will have such specs:
+* power under minimum clock (equals to Idle Power)
+* power under maximum clock (equals to Maximum Power)
 
 #### Clock
 
@@ -42,7 +50,7 @@ Static time to respond (independent from clock)
 
 #### Durability
 
-Signifies how long the component will last before it needs to be replaced
+Signifies how long the component will last before it needs to be replaced. Durability rating will changed based on the power used
 
 ## Memory
 
