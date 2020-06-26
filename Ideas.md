@@ -48,9 +48,9 @@ Signifies how long the component will last before it needs to be replaced
 
 Stores data on demand. Can be volatile or non-volatile
 
-* if amount can be transferred in one go, usage will decrease
+* if data can be transferred in one go, memory won't be used
 * data that is not being processed or transferred, that is queued, will be stored
-* running multiple tasks will severely increase usage
+* running multiple tasks will severely increase the usage
 * will have a different varieties for different purposes:
     * cache -- very fast and small
     * ram -- balance between speed and size
