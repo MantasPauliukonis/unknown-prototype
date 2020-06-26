@@ -81,7 +81,7 @@ Placed on top of the blocks. Increases maximum heat that the block can dissipate
 
 #### Max Dissipation
 
-Maximum heats that can be dissipated
+Maximum heat that can be dissipated
 
 ## Fan
 
@@ -104,38 +104,27 @@ Maximum heat that can be carried
 Machines compute tasks
 
 * task is basically a list of action that the system has to complete
-* task can take up to two inputs, and will make one output
 * performance will depend on how well qualified machine is for this specific task
 * components used for execution can be chosen (e.g. if one is more suitable than another)
 * multiple tasks (same and different) can be run at the same time but it will have further ramifications
 
-An example:
-
-#### Inputs
-
-| Name | Amount Transferred |
-|---|---|
-|X|1|
-|Y|2|
 
 #### Execution
 
-| Instruction | Amount Transferred | Max Parallel Processes |
-|---|---|---|
-|CPU (AB)|8|2|
-|CPU (AB2)|16|1|
+| Instruction | Incoming Size | Outgoing Size | Max Parallel Processes |
+|---|---|---|--|
+|CPU (AB)|4|8|2|
+|CPU (AB2)|8|16|1|
 
-#### Outputs
+* task is executed synchronously from top to bottom
+* when parallel processing is supported the load can be distributed among the same type of components
+* if system does not have a processor with a required instruction, task can't be executed
 
-| Name | Amount Transferred |
-|---|---|
-|Z|16|
+## Gameplay
 
-1) Inputs X and Y are transferred from the local disk or network
-* total 3 in size
-2) X and Y are directed to the first instruction execution (AB) 
-* from 3, size becomes 8
-3) Result is directed to the second instruction execution (AB2) 
-* from 8, size becomes 16
-4) Output amount is written locally or transferred to the network
-* 16 is the final size
+* player advances through the levels in a non linear fashion
+* each level involves one or multiple criteria that the built system must match
+* criteria might be assigned with the bronze, silver or gold reward (so player can return to the level later)
+* player gains points that can be spent to unlock new components and or levels
+* levels are grouped into chapters, that unlike levels are unlocked in a linear way
+* each chapter has a set of components that can be unlocked (may or may not overlap)
