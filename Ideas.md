@@ -95,9 +95,13 @@ Maximum heat that can be dissipated
 
 Exhaust the air out of the chassis
 
-#### Max Dissipation
+#### Power
 
-TODO
+Maximum power that the fan can use at full speed
+
+#### Dissipation
+
+How much heat is dissipated at full speed (power)
 
 ## Heat pipe
 
@@ -106,6 +110,10 @@ Routes the heat through the blocks. Supports mounting the heatsink on top
 #### Max Heat
 
 Maximum heat that can be carried
+
+#### Thermal resistance
+
+TODO<!--  -->
 
 ## Tasks
 
