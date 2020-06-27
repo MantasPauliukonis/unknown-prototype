@@ -80,8 +80,29 @@ Interconnects blocks together
 
 * like a regular processor, consumes power, produces heat that is carried to the near blocks (as the interfaces are not blocks themselves)
 * it's only work is to carry data
+* also may deliver power
+
+#### Delivered Power
+
+Amount of power that can be transferred to adjacent blocks
+
+#### Power Delivery Loss %
+
+Percent of power that is turned to heat when transferred
 
 *(inherits everything else from processor)*
+
+## Power supply
+
+#### Power
+
+Output power of the supply
+
+* has a minimum and maximum power ratings
+
+#### Loss %
+
+Percent of power that is turned into heat
 
 ## Heatsink
 
@@ -113,7 +134,7 @@ Maximum heat that can be carried
 
 #### Thermal resistance
 
-TODO<!--  -->
+TODO
 
 ## Tasks
 
