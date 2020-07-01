@@ -172,3 +172,10 @@ Machines compute tasks
 * player gains points that can be spent to unlock new components and or levels
 * levels are grouped into chapters, that unlike levels are unlocked in a linear way
 * each chapter has a set of components that can be unlocked (may or may not overlap)
+
+## Requirements
+
+* no irritating gameplay tasks
+* no unnecessary features
+* visual queues and indicators
+* obvious component choices
