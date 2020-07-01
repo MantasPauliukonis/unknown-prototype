@@ -136,6 +136,13 @@ Maximum heat that can be carried
 
 TODO
 
+## Thermal dynamics
+
+* each block that has a heat source will transfer the fixed amount of heat (%) to the adjacent (up, down, left, right) blocks
+* blocks without any cooling accessories will dissipate a fixed amount of heat (only enough for low power components)
+* when heat pipe is used it will basically override the heat transfer value to a much higher percent (to the blocks where it is routed through)
+* fans don't push the heat to other blocks, they only exhaust heat
+
 ## Tasks
 
 Machines compute tasks
